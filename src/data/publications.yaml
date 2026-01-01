@@ -46,7 +46,6 @@ publications:
     year: 2024
     teaser: "diffloco.jpg"
     arxiv: "2403.03639"
-    video: "https://youtu.be/T_JAmqtAkM8?si=FW1yGuruHlCj1X2m"
 
   - id: zhu2022efficient
     title: "Efficient Object Manipulation Planning with Monte Carlo Tree Search"
@@ -73,7 +72,7 @@ publications:
     venue: "Learning for Dynamics & Control Conference (L4DC)"
     year: 2023
     teaser: "learnmpc.jpg"
-    website: "https://openreview.net/forum?id=cRQ6ukjdijs"
+    website: "https://proceedings.mlr.press/v211/khadiv23a.html"
     selected: true
 
   - id: meduri2022mpc

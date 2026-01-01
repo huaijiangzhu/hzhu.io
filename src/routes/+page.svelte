@@ -3,7 +3,7 @@
 </script>
 
 <Seo
-  title="Huaijiang Zhu"
+  title="诸怀疆 | Huaijiang Zhu"
   description="Founding engineer at Alquist working on multimodal reasoning for embodied agents. Ph.D. from NYU in robotics."
 />
 
