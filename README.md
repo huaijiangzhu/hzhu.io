@@ -34,7 +34,7 @@ npm run preview
 2. Configure build settings:
    | Setting | Value |
    |---------|-------|
-   | Build command | `npm run build` |
+   | Build command | `npm install && npm run build` |
    | Build output directory | `build` |
    | Node.js version | `20` (set via `NODE_VERSION` environment variable) |
 
