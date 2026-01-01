@@ -9,7 +9,7 @@
 
 <article class="layout-md">
   <section>
-    <h1 class="text-2xl font-bold text-black dark:text-white mb-6">Huaijiang Zhu</h1>
+    <h1 class="text-2xl font-bold text-black dark:text-white mb-6">诸怀疆 | Huaijiang Zhu</h1>
     <div>
       <img
         src="/images/profile.jpg"
