@@ -1,0 +1,117 @@
+publications:
+  - id: zhu2024learncrm
+    title: "Should We Learn Contact-Rich Manipulation Policies from Sampling-Based Planners?"
+    authors:
+      - { name: "Huaijiang Zhu", self: true }
+      - { name: "Tong Zhao" }
+      - { name: "Xinpei Ni" }
+      - { name: "Jiuguang Wang" }
+      - { name: "Kuan Fang" }
+      - { name: "Ludovic Righetti" }
+      - { name: "Tao Pang" }
+    venue: "IEEE Robotics and Automation Letters (RA-L)"
+    year: 2025
+    teaser: "learncrm.png"
+    arxiv: "2412.09743"
+    video: "https://youtu.be/CxgjJmiiEhI"
+
+  - id: shirai2024linear
+    title: "Is Linear Feedback on Smoothed Dynamics Sufficient for Stabilizing Contact-Rich Plans?"
+    authors:
+      - { name: "Yuki Shirai" }
+      - { name: "Tong Zhao" }
+      - { name: "HJ Suh" }
+      - { name: "Huaijiang Zhu", self: true }
+      - { name: "Xinpei Ni" }
+      - { name: "Jiuguang Wang" }
+      - { name: "Max Simchowitz" }
+      - { name: "Tao Pang" }
+    venue: "IEEE International Conference on Robotics and Automation (ICRA)"
+    year: 2025
+    teaser: "lqrcrm.jpg"
+    arxiv: "2411.06542"
+
+  - id: dhedin2024diffusion
+    title: "Diffusion-Based Learning of Contact Plans for Agile Locomotion"
+    authors:
+      - { name: "Victor Dhedin" }
+      - { name: "Adithya Kumar Chinnakkonda Ravi" }
+      - { name: "Armand Jordana" }
+      - { name: "Huaijiang Zhu", self: true }
+      - { name: "Avadesh Meduri" }
+      - { name: "Ludovic Righetti" }
+      - { name: "Bernhard Scholkopf" }
+      - { name: "Majid Khadiv" }
+    venue: "IEEE-RAS International Conference on Humanoid Robots (Humanoids)"
+    year: 2024
+    teaser: "diffloco.jpg"
+    arxiv: "2403.03639"
+    video: "https://youtu.be/T_JAmqtAkM8?si=FW1yGuruHlCj1X2m"
+
+  - id: zhu2022efficient
+    title: "Efficient Object Manipulation Planning with Monte Carlo Tree Search"
+    authors:
+      - { name: "Huaijiang Zhu", self: true }
+      - { name: "Avadesh Meduri" }
+      - { name: "Ludovic Righetti" }
+    venue: "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+    year: 2023
+    teaser: "mcts.png"
+    arxiv: "2206.09023"
+    code: "https://github.com/machines-in-motion/contact_mcts"
+    selected: true
+    award: "Best Paper Award Finalist on Mobile Manipulation"
+
+  - id: khadiv2023learning
+    title: "Learning Locomotion Skills from MPC in Sensor Space"
+    authors:
+      - { name: "Majid Khadiv" }
+      - { name: "Avadesh Meduri" }
+      - { name: "Huaijiang Zhu", self: true }
+      - { name: "Ludovic Righetti" }
+      - { name: "Bernhard Scholkopf" }
+    venue: "Learning for Dynamics & Control Conference (L4DC)"
+    year: 2023
+    teaser: "learnmpc.jpg"
+    website: "https://openreview.net/forum?id=cRQ6ukjdijs"
+    selected: true
+
+  - id: meduri2022mpc
+    title: "MPC with Sensor-Based Online Cost Adaptation"
+    authors:
+      - { name: "Avadesh Meduri" }
+      - { name: "Huaijiang Zhu", self: true }
+      - { name: "Armand Jordana" }
+      - { name: "Ludovic Righetti" }
+    venue: "IEEE International Conference on Robotics and Automation (ICRA)"
+    year: 2023
+    teaser: "qpnet.png"
+    arxiv: "2209.09451"
+    selected: true
+
+  - id: zhu2020enabling
+    title: "Enabling Remote Whole-Body Control with 5G Edge Computing"
+    authors:
+      - { name: "Huaijiang Zhu", self: true }
+      - { name: "Manali Sharma" }
+      - { name: "Kai Pfeiffer" }
+      - { name: "Marco Mezzavilla" }
+      - { name: "Jia Shen" }
+      - { name: "Sundeep Rangan" }
+      - { name: "Ludovic Righetti" }
+    venue: "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+    year: 2020
+    teaser: "5g.png"
+    arxiv: "2008.08243"
+    selected: true
+
+  - id: zhu2017legible
+    title: "Legible Action Selection in Human-Robot Collaboration"
+    authors:
+      - { name: "Huaijiang Zhu", self: true }
+      - { name: "Volker Gabler" }
+      - { name: "Dirk Wollherr" }
+    venue: "IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)"
+    year: 2017
+    teaser: "legible.png"
+    pdf: "zhu2017legible.pdf"

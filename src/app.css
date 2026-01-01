@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  hr {
+    @apply border-neutral-200 dark:border-neutral-700;
+  }
+}
+
+@layer components {
+  .link {
+    @apply underline underline-offset-[3px] decoration-neutral-400 dark:decoration-neutral-500;
+    @apply hover:text-black hover:decoration-black transition-colors;
+    @apply dark:hover:text-white dark:hover:decoration-white;
+  }
+
+  .layout-md {
+    @apply max-w-screen-md mx-auto px-4 sm:px-6;
+  }
+
+  .heading2 {
+    @apply text-black dark:text-white text-xl font-semibold mb-6;
+  }
+
+  .heading3 {
+    @apply text-black dark:text-white text-lg font-medium mb-4;
+  }
+}
+
+html {
+  @apply motion-safe:scroll-smooth;
+}
+
+body {
+  @apply py-12 sm:py-16 md:py-20 text-neutral-700 dark:text-neutral-300;
+}
+
+::selection {
+  @apply bg-neutral-200 dark:bg-neutral-600;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+/* KaTeX customization */
+.katex-display {
+  @apply overflow-x-auto py-4;
+}

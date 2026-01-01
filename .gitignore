@@ -1,0 +1,33 @@
+# Dependencies
+node_modules
+
+# Build output
+build
+.svelte-kit
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Claude
+.claude
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
