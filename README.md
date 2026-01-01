@@ -36,7 +36,7 @@ npm run preview
    |---------|-------|
    | Build command | `npm run build` |
    | Build output directory | `build` |
-   | Node.js version | `18` (set via `NODE_VERSION` environment variable) |
+   | Node.js version | `20` (set via `NODE_VERSION` environment variable) |
 
 3. Deploy - Cloudflare will automatically rebuild on each push to main
 
