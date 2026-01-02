@@ -30,8 +30,8 @@
       >
     </div>
   {/each}
-  <p class="mt-8 text-sm text-neutral-500 dark:text-neutral-400">
-    based on <a href="https://github.com/ekzhang/ekzhang.github.io" class="link" target="_blank" rel="noopener noreferrer">ekzhang.github.io</a>
+  <p class="mt-16 text-sm text-neutral-500 dark:text-neutral-400 text-center">
+    © 2026 Huaijiang Zhu. Design adapted from <a href="https://github.com/ekzhang/ekzhang.github.io" class="link" target="_blank" rel="noopener noreferrer">Eric Zhang</a>.
   </p>
 </footer>
 
