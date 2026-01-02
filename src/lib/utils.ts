@@ -1,11 +1,13 @@
 import strftime from "strftime";
 
+const utc = strftime.utc();
+
 export function formatDate(date: Date | string): string {
   const d = typeof date === "string" ? new Date(date) : date;
-  return strftime("%B %Y", d);
+  return utc("%B %Y", d);
 }
 
 export function formatFullDate(date: Date | string): string {
   const d = typeof date === "string" ? new Date(date) : date;
-  return strftime("%B %d, %Y", d);
+  return utc("%B %d, %Y", d);
 }

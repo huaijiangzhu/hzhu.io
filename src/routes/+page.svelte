@@ -1,5 +1,9 @@
 <script lang="ts">
   import Seo from "$lib/components/Seo.svelte";
+  import { formatFullDate } from "$lib/utils";
+  import type { PageData } from "./$types";
+
+  export let data: PageData;
 </script>
 
 <Seo
@@ -59,5 +63,34 @@
       </p>
     </div>
   </section>
+
+  {#if data.posts.length > 0}
+    <section class="mt-12">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-xl font-bold text-black dark:text-white">Recent Posts</h2>
+        <a href="/blog" class="text-sm link">View all</a>
+      </div>
+
+      <div class="space-y-6">
+        {#each data.posts as post}
+          <a href="/blog/{post.slug}" class="block group">
+            <article>
+              <h3
+                class="font-medium text-black dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-1"
+              >
+                {post.title}
+              </h3>
+              <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-2">
+                {formatFullDate(post.date)}
+              </p>
+              <p class="text-neutral-600 dark:text-neutral-300">
+                {post.description}
+              </p>
+            </article>
+          </a>
+        {/each}
+      </div>
+    </section>
+  {/if}
 
 </article>
