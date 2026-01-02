@@ -9,7 +9,7 @@
 </script>
 
 <header
-  class="layout-md mb-8"
+  class="layout-md mb-8 flex justify-between items-center"
   data-sveltekit-noscroll
   data-sveltekit-preload-code="eager"
 >
@@ -34,8 +34,8 @@
         {link.name}
       </a>
     {/each}
-    <ThemeToggle />
   </nav>
+  <ThemeToggle />
 </header>
 
 <style lang="postcss">

@@ -26,8 +26,8 @@
   aria-label="Toggle dark mode"
 >
   {#if isDark}
-    <Sun class="w-5 h-5" />
+    <Sun class="w-6 h-6" />
   {:else}
-    <Moon class="w-5 h-5" />
+    <Moon class="w-6 h-6" />
   {/if}
 </button>
