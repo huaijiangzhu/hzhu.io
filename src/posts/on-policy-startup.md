@@ -1,7 +1,7 @@
 ---
 title: "The On-Policy Startup"
 date: "2026-01-02"
-description: "An example post demonstrating LaTeX math support in the blog"
+description: "As AI coding tools make building MVPs dramatically cheaper, startups can shift from off-policy learning (customer interviews) to on-policy learning (just build it and observe what gets paid for)."
 slug: "on-policy-startup"
 ---
 
