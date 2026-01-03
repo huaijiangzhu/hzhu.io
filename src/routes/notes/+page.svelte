@@ -7,16 +7,16 @@
 </script>
 
 <Seo
-  title="Blog - Huaijiang Zhu"
-  description="Blog posts about robotics, machine learning, and other topics."
+  title="Notes - Huaijiang Zhu"
+  description="Notes about robotics, machine learning, and other topics."
 />
 
 <article class="layout-md">
-  <h2 class="heading2">Blog</h2>
+  <h2 class="heading2">Notes</h2>
 
   <div class="space-y-8">
     {#each data.posts as post}
-      <a href="/blog/{post.slug}" class="block group">
+      <a href="/notes/{post.slug}" class="block group">
         <article>
           <h3
             class="font-medium text-black dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-1"

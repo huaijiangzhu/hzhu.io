@@ -25,10 +25,10 @@
 
   <div class="mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-700">
     <a
-      href="/blog"
+      href="/notes"
       class="text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors"
     >
-      &larr; Back to all posts
+      &larr; Back to all notes
     </a>
   </div>
 </article>

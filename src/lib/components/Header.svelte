@@ -4,7 +4,8 @@
 
   const links = [
     { name: "publications", href: "/publications" },
-    { name: "blog", href: "/blog" },
+    { name: "notes", href: "/notes" },
+    { name: "newsletter", href: "https://huaijiang.substack.com", external: true },
   ];
 </script>
 
@@ -26,10 +27,12 @@
       <a
         href={link.href}
         class="hover:text-black dark:hover:text-white transition-colors"
-        class:text-black={$page.url.pathname === link.href ||
-          $page.url.pathname.startsWith(link.href + "/")}
-        class:dark:text-white={$page.url.pathname === link.href ||
-          $page.url.pathname.startsWith(link.href + "/")}
+        class:text-black={!link.external && ($page.url.pathname === link.href ||
+          $page.url.pathname.startsWith(link.href + "/"))}
+        class:dark:text-white={!link.external && ($page.url.pathname === link.href ||
+          $page.url.pathname.startsWith(link.href + "/"))}
+        target={link.external ? "_blank" : undefined}
+        rel={link.external ? "noopener noreferrer" : undefined}
       >
         {link.name}
       </a>
