@@ -54,7 +54,7 @@ The human role evolves from “person who figures out what customers want” to 
 
 ## The Bitter Lesson
 
-Rich Sutton’s “Bitter Lesson” observes that across AI history, general methods leveraging computation consistently outperform human-engineered knowledge. Chess, Go, computer vision, NLP. Scale and learning beat clever priors. The lesson is bitter because it sidelines human expertise.
+Rich Sutton’s “Bitter Lesson” observes that across AI history, general methods leveraging computation consistently outperform human-engineered knowledge. Chess, Go, computer vision, NLP. Scale and learning beat clever priors. The lesson is bitter because the knowledge and intelligence we humans take such pride in may not actually matter.
 
 We may be approaching a similar moment in entrepreneurship.
 
