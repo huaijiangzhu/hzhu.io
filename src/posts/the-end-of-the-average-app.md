@@ -1,7 +1,7 @@
 ---
 title: "The End of the Average App"
 date: "2026-01-25"
-description: "Code was once a scarce form of leverage. Because it was expensive, we had to standardize. As AI drives coding costs to zero, the market is shifting toward hyper-personalized software for individuals, where the new competitive advantage is trust rather than technology."
+description: "Code was once a scarce form of leverage. Because it was expensive, startups had to build standardized products for enterprises who could pay. As AI drives coding costs to zero, the market is shifting toward hyper-personalized software for consumers, where the new competitive advantage is trust rather than technology."
 slug: "the-end-of-the-average-app"
 ---
 There is something striking about the last decade of startups. If you judged solely by the headlines, you would think the era was defined by consumer apps. We obsessed over them because we used them. While the cultural spotlight was on the rare consumer giants like Uber and Airbnb, the real value was being captured by a sector most people consider boring: enterprise software.
@@ -32,7 +32,7 @@ Think about what that means: we can finally serve all those niche and individual
 
 We will be headed from mass production to mass customization in software. There will be no more average app, because the average user never existed. There will only be my app and your app, each one delivered on-the-fly by a generative system. The successful companies of the future will be the ones that give individuals exactly what they want in a way that old mass-market software never could.
 
-So, we now have infinite supply and infinite demand; this sounds like an utopia. But in a world where AI can generate countless tailored apps, features, and content for every niche, how does any given product or provider get noticed? 
+So, we now have infinite supply and infinite demand; this sounds like a utopia. But in a world where AI can generate countless tailored apps, features, and content for every niche, how does any given product or provider get noticed? 
 
 If AI-generated apps flood the market, users will be drowning in options. App Stores and web platforms will be saturated with auto-generated solutions for every micro-vertical and persona. Traditional digital marketing tricks like cheaply buying Facebook ads to acquire users won’t be the goldmine they once were. When there are millions of personalized offerings, ad markets get crowded and expensive, and generic messages get tuned out. In short, the arbitrage of buying attention is gone. The algorithms will be overflowing with AI-generated noise, and standing out will be harder than ever.
 
