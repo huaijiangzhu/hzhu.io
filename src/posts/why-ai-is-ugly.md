@@ -56,7 +56,7 @@ This collapses the entire logic of timeless design. A timeless artifact makes se
 
 This leads to the most uncomfortable conclusion.
 
-When you design a *tasteful* product, you are making a decision for the user. You are saying: *I know how you should solve this problem.* You are imposing your preference–or your guess at the average user's preference–on every individual. In the pre-AGI era, it was impossible to create a unique interface for every user, so we designed a single generic one and forced everyone to learn it. Taste was a necessary tyranny of scale.
+When you design a *tasteful* product, you are making a decision for the user. You are saying: *I know how you should solve this problem.* You are imposing your preference–or your guess at the average user's preference–on every individual. In the pre-AGI era, it was impossible to create a unique product for every user, so we designed a single generic one and forced everyone to adapt to it. Taste was a necessary tyranny of scale.
 
 In the post-AGI era, this imposition is just arrogance. It is condescending to assume you know the optimal way for a stranger to solve their problem, when the machine could just ask them and generate a solution in milliseconds.
 
