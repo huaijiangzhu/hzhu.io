@@ -7,6 +7,12 @@ interface SubstackPost {
   timestamp: number;
 }
 
+interface PostModule {
+  title: string;
+  date: string;
+  slug?: string;
+}
+
 function formatDateET(date: Date): string {
   return date.toLocaleDateString("en-US", {
     timeZone: "America/New_York",
@@ -16,7 +22,30 @@ function formatDateET(date: Date): string {
   });
 }
 
+function slugFromUrl(url: string): string {
+  const match = url.match(/\/p\/([^/?#]+)/);
+  return match ? match[1] : "";
+}
+
 export const load: PageServerLoad = async ({ fetch }) => {
+  // Load local posts from markdown files
+  const postModules = import.meta.glob<PostModule>("../posts/*.md", {
+    eager: true,
+  });
+
+  const localPosts = Object.entries(postModules).map(([path, post]) => {
+    const filename = path.split("/").pop()?.replace(".md", "") ?? "";
+    const slug = post.slug || filename;
+    const date = new Date(post.date);
+    return {
+      slug,
+      title: post.title,
+      url: `https://huaijiang.substack.com/p/${slug}`,
+      date: formatDateET(date),
+      timestamp: date.getTime(),
+    };
+  });
+
   // Load Substack newsletter posts
   let substackPosts: SubstackPost[] = [];
   try {
@@ -29,7 +58,9 @@ export const load: PageServerLoad = async ({ fetch }) => {
     while ((match = itemRegex.exec(xml)) !== null) {
       const itemContent = match[1];
 
-      const titleMatch = itemContent.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/);
+      const titleMatch = itemContent.match(
+        /<title><!\[CDATA\[(.*?)\]\]><\/title>/,
+      );
       const linkMatch = itemContent.match(/<link>(.*?)<\/link>/);
       const pubDateMatch = itemContent.match(/<pubDate>(.*?)<\/pubDate>/);
 
@@ -43,12 +74,21 @@ export const load: PageServerLoad = async ({ fetch }) => {
         });
       }
     }
-
-    substackPosts.sort((a, b) => b.timestamp - a.timestamp);
-    substackPosts = substackPosts.slice(0, 5);
   } catch (error) {
     console.error("Failed to fetch Substack feed:", error);
   }
 
-  return { substackPosts };
+  // Merge: Substack posts take priority, local posts fill in gaps (dedup by slug)
+  const seenSlugs = new Set(substackPosts.map((p) => slugFromUrl(p.url)));
+  const mergedPosts = [...substackPosts];
+
+  for (const post of localPosts) {
+    if (!seenSlugs.has(post.slug)) {
+      mergedPosts.push(post);
+    }
+  }
+
+  mergedPosts.sort((a, b) => b.timestamp - a.timestamp);
+
+  return { substackPosts: mergedPosts.slice(0, 5) };
 };

@@ -2,7 +2,7 @@
 title: "The On-Policy Startup"
 date: "2026-01-02"
 description: "As AI coding tools make building MVPs dramatically cheaper, startups can shift from off-policy learning (customer interviews) to on-policy learning (just build it and observe what gets paid for)."
-slug: "on-policy-startup"
+slug: "the-on-policy-startup"
 ---
 I’ve spent six years doing a robotics PhD, watching GPU simulation transform how we train robot policies. Recently, AI coding tools have started doing the same for software. And I think the lesson emerging is the same one robotics already learned.
 
