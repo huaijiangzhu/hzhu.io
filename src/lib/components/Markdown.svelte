@@ -109,6 +109,10 @@
     @apply border-l-4 border-neutral-300 dark:border-neutral-600 pl-4 italic text-neutral-600 dark:text-neutral-400 mb-4;
   }
 
+  .md-output :global(img) {
+    @apply max-w-full h-auto rounded-lg border border-neutral-200 dark:border-neutral-700 my-4;
+  }
+
   .md-output :global(.katex-display) {
     @apply overflow-x-auto py-2;
   }
