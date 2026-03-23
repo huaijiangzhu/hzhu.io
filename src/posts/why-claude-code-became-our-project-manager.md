@@ -2,7 +2,7 @@
 title: "Why Claude Code Became Our Project Manager"
 date: "2026-03-22"
 description: "We started using Claude Code to help write code. What surprised us was how useful it became for project management. Because it can read the repo, issues, PRs, and milestones together, it often sees the project more holistically than any one engineer can. That makes it good not just at tracking work, but at spotting gaps, prioritizing what matters, and reframing local tickets as the real problems behind them."
-slug: "why-claude-code-became-our-project-manager"
+slug: "why-claude-code-became-our-project"
 ---
 # Why Claude Code Became Our Project Manager
 
