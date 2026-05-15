@@ -14,6 +14,8 @@ publications:
     teaser: "learncrm.png"
     arxiv: "2412.09743"
     video: "https://youtu.be/CxgjJmiiEhI"
+    selected: true
+    award: "Best Paper Award"
 
   - id: shirai2024linear
     title: "Is Linear Feedback on Smoothed Dynamics Sufficient for Stabilizing Contact-Rich Plans?"
