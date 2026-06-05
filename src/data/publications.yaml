@@ -75,7 +75,6 @@ publications:
     year: 2023
     teaser: "learnmpc.jpg"
     website: "https://proceedings.mlr.press/v211/khadiv23a.html"
-    selected: true
 
   - id: meduri2022mpc
     title: "MPC with Sensor-Based Online Cost Adaptation"
@@ -88,7 +87,6 @@ publications:
     year: 2023
     teaser: "qpnet.png"
     arxiv: "2209.09451"
-    selected: true
 
   - id: zhu2020enabling
     title: "Enabling Remote Whole-Body Control with 5G Edge Computing"

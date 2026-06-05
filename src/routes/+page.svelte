@@ -1,10 +1,16 @@
 <script lang="ts">
   import Seo from "$lib/components/Seo.svelte";
+  import Publication from "$lib/components/Publication.svelte";
+  import publications from "$lib/../../src/data/publications.yaml";
   import type { PageData } from "./$types";
 
   export let data: PageData;
 
   $: substackPosts = data.substackPosts ?? [];
+
+  const selectedPublications = publications.publications
+    .filter((pub) => pub.selected)
+    .sort((a, b) => b.year - a.year);
 </script>
 
 <Seo
@@ -65,10 +71,25 @@
     </div>
   </section>
 
+  {#if selectedPublications.length > 0}
+    <section class="mt-12">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-xl font-bold text-black dark:text-white">selected publications</h2>
+        <a href="/publications" class="text-sm link">View all</a>
+      </div>
+
+      <div>
+        {#each selectedPublications as pub}
+          <Publication publication={pub} />
+        {/each}
+      </div>
+    </section>
+  {/if}
+
   {#if substackPosts.length > 0}
     <section class="mt-12">
       <div class="flex items-center justify-between mb-6">
-        <h2 class="text-xl font-bold text-black dark:text-white">recent</h2>
+        <h2 class="text-xl font-bold text-black dark:text-white">notes</h2>
         <a href="https://huaijiang.substack.com" class="text-sm link" target="_blank" rel="noopener noreferrer">View all</a>
       </div>
 
