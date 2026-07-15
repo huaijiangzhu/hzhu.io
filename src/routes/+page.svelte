@@ -35,7 +35,10 @@
           class="link"
           target="_blank"
           rel="noopener noreferrer">Alquist</a
-        >, where I worked on multimodal reasoning for embodied agents. I received my Ph.D.
+        >, where I worked on multimodal reasoning for embodied agents.
+      </p>
+      <p class="mt-4">
+        I received my Ph.D.
         from New York University, where I was advised by Prof.
         <a
           href="https://engineering.nyu.edu/faculty/ludovic-righetti"
