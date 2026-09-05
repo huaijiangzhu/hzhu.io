@@ -46,5 +46,8 @@ body {
 
 /* KaTeX customization */
 .katex-display {
-  @apply overflow-x-auto py-4;
+  /* overflow-x:auto forces overflow-y to compute as auto, and KaTeX overshoots
+     its box vertically by a hair -- that yields a scrollbar with nothing to
+     scroll. Pin overflow-y so only genuinely wide math scrolls, horizontally. */
+  @apply overflow-x-auto overflow-y-hidden py-4;
 }

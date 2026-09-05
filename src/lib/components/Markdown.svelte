@@ -17,11 +17,19 @@
     },
   });
 
+  // KaTeX echoes the TeX source verbatim into its MathML <annotation>, newlines
+  // included. marked then parses that output, so a lone `-` or `=` line inside
+  // display math reads as a setext heading. Collapse newlines first; they are
+  // insignificant whitespace in LaTeX anyway.
+  function flatten(math: string): string {
+    return math.trim().replace(/\s*\n\s*/g, " ");
+  }
+
   function renderMath(content: string): string {
     // Render display math ($$...$$)
     content = content.replace(/\$\$([\s\S]+?)\$\$/g, (_, math) => {
       try {
-        return katex.renderToString(math.trim(), {
+        return katex.renderToString(flatten(math), {
           displayMode: true,
           throwOnError: false,
         });
@@ -33,7 +41,7 @@
     // Render inline math ($...$) but not escaped \$
     content = content.replace(/(?<!\\)\$([^\$\n]+?)\$/g, (_, math) => {
       try {
-        return katex.renderToString(math.trim(), {
+        return katex.renderToString(flatten(math), {
           displayMode: false,
           throwOnError: false,
         });
@@ -114,6 +122,25 @@
   }
 
   .md-output :global(.katex-display) {
-    @apply overflow-x-auto py-2;
+    @apply overflow-x-auto overflow-y-hidden py-2;
+  }
+
+  .md-output :global(.remark) {
+    @apply bg-neutral-50 dark:bg-neutral-800/40 my-6 px-5 py-4;
+    @apply border border-neutral-200 dark:border-neutral-700 rounded-lg;
+    @apply text-[95%] text-neutral-600 dark:text-neutral-400;
+  }
+
+  .md-output :global(.remark > :last-child) {
+    @apply mb-0;
+  }
+
+  .md-output :global(.remark .katex-display) {
+    @apply overflow-y-hidden py-1 my-3;
+  }
+
+  .md-output :global(.remark-label) {
+    @apply mb-2 text-xs font-semibold uppercase tracking-wider;
+    @apply text-neutral-500 dark:text-neutral-500;
   }
 </style>

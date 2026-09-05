@@ -5,6 +5,7 @@ interface SubstackPost {
   date: string;
   url: string;
   timestamp: number;
+  external: boolean;
 }
 
 interface PostModule {
@@ -40,9 +41,10 @@ export const load: PageServerLoad = async ({ fetch }) => {
     return {
       slug,
       title: post.title,
-      url: `https://huaijiang.substack.com/p/${slug}`,
+      url: `/notes/${slug}`,
       date: formatDateET(date),
       timestamp: date.getTime(),
+      external: false,
     };
   });
 
@@ -71,6 +73,7 @@ export const load: PageServerLoad = async ({ fetch }) => {
           url: linkMatch[1],
           date: formatDateET(pubDate),
           timestamp: pubDate.getTime(),
+          external: true,
         });
       }
     }

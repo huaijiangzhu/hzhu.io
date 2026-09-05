@@ -100,7 +100,12 @@
 
       <div class="space-y-4">
         {#each substackPosts as post}
-          <a href={post.url} class="block group" target="_blank" rel="noopener noreferrer">
+          <a
+            href={post.url}
+            class="block group"
+            target={post.external ? "_blank" : undefined}
+            rel={post.external ? "noopener noreferrer" : undefined}
+          >
             <article class="flex items-baseline gap-4">
               <p class="text-sm text-neutral-500 dark:text-neutral-400 w-36 shrink-0">
                 {post.date}
