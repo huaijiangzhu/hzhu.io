@@ -1,0 +1,6 @@
+# Tested with Python 3.12 on macOS arm64.
+# The robotics Pinocchio package is named "pin" on PyPI.
+numpy==2.5.3
+matplotlib==3.11.2
+mujoco==3.14.0
+pin==4.1.0

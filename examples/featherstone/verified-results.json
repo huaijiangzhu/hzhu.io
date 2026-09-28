@@ -1,0 +1,169 @@
+{
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "mujoco": "3.14.0",
+    "pinocchio": "4.1.0"
+  },
+  "conditions": {
+    "radius_m": 1,
+    "speed_rad_s": 1,
+    "angular_acceleration_rad_s2": 0,
+    "six_vector_order": "angular, linear",
+    "gravity": "disabled"
+  },
+  "q_0": {
+    "position_mujoco": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "position_pinocchio": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "mujoco_velocity": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "pinocchio_world_velocity": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pinocchio_lwa_velocity": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "mujoco_acceleration": [
+      0.0,
+      0.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    "pinocchio_world_spatial_acceleration": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pinocchio_lwa_spatial_acceleration": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pinocchio_lwa_classical_acceleration": [
+      0.0,
+      0.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  "q_pi_over_2": {
+    "position_mujoco": [
+      2.220446049250313e-16,
+      1.0,
+      0.0
+    ],
+    "position_pinocchio": [
+      6.123233995736766e-17,
+      1.0,
+      0.0
+    ],
+    "mujoco_velocity": [
+      0.0,
+      0.0,
+      1.0,
+      -1.0,
+      2.220446049250313e-16,
+      0.0
+    ],
+    "pinocchio_world_velocity": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pinocchio_lwa_velocity": [
+      0.0,
+      0.0,
+      1.0,
+      -1.0,
+      6.123233995736766e-17,
+      0.0
+    ],
+    "mujoco_acceleration": [
+      0.0,
+      0.0,
+      0.0,
+      -2.220446049250313e-16,
+      -1.0,
+      0.0
+    ],
+    "pinocchio_world_spatial_acceleration": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pinocchio_lwa_spatial_acceleration": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pinocchio_lwa_classical_acceleration": [
+      0.0,
+      0.0,
+      0.0,
+      -6.123233995736766e-17,
+      -1.0,
+      0.0
+    ]
+  },
+  "verification": {
+    "states_checked": 26,
+    "max_absolute_errors": {
+      "position_mujoco": 2.220446049250313e-16,
+      "position_pinocchio": 0.0,
+      "velocity_analytic": 2.220446049250313e-16,
+      "velocity_libraries": 2.220446049250313e-16,
+      "world_velocity": 0.0,
+      "acceleration_analytic": 2.220446049250313e-16,
+      "acceleration_libraries": 2.220446049250313e-16,
+      "world_spatial_acceleration": 0.0,
+      "lwa_spatial_acceleration": 0.0,
+      "classical_minus_spatial": 5.551115123125783e-17,
+      "finite_difference_mujoco_velocity": 5.728673091454084e-11,
+      "finite_difference_pinocchio_lwa_velocity": 5.452438500697099e-11,
+      "finite_difference_world": 3.9995784462121264e-13
+    }
+  }
+}
