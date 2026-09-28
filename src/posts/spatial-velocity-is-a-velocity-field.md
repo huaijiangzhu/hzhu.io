@@ -77,7 +77,7 @@ $$
 =\dot p-\omega\times p.
 $$
 
-Together with the angular velocity $\omega$, this gives us exactly the spatial twist from the textbook.
+The textbook's infinitely large extension is just a way to picture this velocity field beyond the physical body. Asking for the velocity of the imaginary material point passing through the world origin is simply evaluating the field at $x=0$. Together with the angular velocity $\omega$, this gives us the spatial twist.
 
 Now connect several rigid bodies into a robot arm. Each link's motion relative to its parent contributes its own velocity field. Express these contributions in the same world frame, and their linear parts are all evaluated at *the same spatial location*. We can add those velocities, together with the angular velocities, to get the end-effector's twist.
 
