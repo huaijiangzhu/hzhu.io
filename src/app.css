@@ -78,6 +78,74 @@ body {
   @apply bg-transparent p-0;
 }
 
+/* Syntax colors for highlight.js tokens: GitHub's light and dark palettes. */
+.md-output pre {
+  --hl-keyword: #d73a49;
+  --hl-title: #6f42c1;
+  --hl-constant: #005cc5;
+  --hl-string: #032f62;
+  --hl-builtin: #e36209;
+  --hl-comment: #6a737d;
+  --hl-tag: #22863a;
+}
+
+.dark .md-output pre {
+  --hl-keyword: #ff7b72;
+  --hl-title: #d2a8ff;
+  --hl-constant: #79c0ff;
+  --hl-string: #a5d6ff;
+  --hl-builtin: #ffa657;
+  --hl-comment: #8b949e;
+  --hl-tag: #7ee787;
+}
+
+.md-output .hljs-doctag,
+.md-output .hljs-keyword,
+.md-output .hljs-template-tag,
+.md-output .hljs-template-variable,
+.md-output .hljs-type,
+.md-output .hljs-variable.language_ {
+  color: var(--hl-keyword);
+}
+
+.md-output .hljs-title {
+  color: var(--hl-title);
+}
+
+.md-output .hljs-attr,
+.md-output .hljs-attribute,
+.md-output .hljs-literal,
+.md-output .hljs-meta,
+.md-output .hljs-number,
+.md-output .hljs-operator,
+.md-output .hljs-variable,
+.md-output .hljs-selector-attr,
+.md-output .hljs-selector-class,
+.md-output .hljs-selector-id {
+  color: var(--hl-constant);
+}
+
+.md-output .hljs-regexp,
+.md-output .hljs-string {
+  color: var(--hl-string);
+}
+
+.md-output .hljs-built_in,
+.md-output .hljs-symbol {
+  color: var(--hl-builtin);
+}
+
+.md-output .hljs-comment {
+  color: var(--hl-comment);
+}
+
+.md-output .hljs-name,
+.md-output .hljs-quote,
+.md-output .hljs-selector-tag,
+.md-output .hljs-selector-pseudo {
+  color: var(--hl-tag);
+}
+
 .md-output ul {
   @apply list-disc list-inside mb-4;
 }

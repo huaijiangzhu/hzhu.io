@@ -1,10 +1,27 @@
 <script lang="ts">
   import { marked } from "marked";
   import katex from "katex";
+  import hljs from "highlight.js/lib/core";
+  import python from "highlight.js/lib/languages/python";
+  import cpp from "highlight.js/lib/languages/cpp";
+  import bash from "highlight.js/lib/languages/bash";
+
+  // The languages a fenced code block can name. Each one adds to the page's
+  // script, so register a language here when a post first uses it.
+  hljs.registerLanguage("python", python);
+  hljs.registerLanguage("cpp", cpp);
+  hljs.registerLanguage("bash", bash);
 
   export let source: string;
 
   marked.use({
+    // Returns the token markup for a registered language. A block with no
+    // language, or one not registered above, stays plain. The colors are in
+    // app.css.
+    highlight(code: string, lang: string) {
+      if (!hljs.getLanguage(lang)) return code;
+      return hljs.highlight(code, { language: lang }).value;
+    },
     renderer: {
       link(href: string, title: string | null, text: string) {
         let out = `<a rel="external" href="${encodeURI(href)}" class="link"`;
