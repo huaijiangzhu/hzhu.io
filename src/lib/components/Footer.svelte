@@ -41,10 +41,20 @@
   }
 
   .row span {
-    @apply text-neutral-500 dark:text-neutral-400 min-w-[70px];
+    @apply text-neutral-500 min-w-[70px];
   }
 
   .row hr {
-    @apply w-full mt-0.5 border-neutral-300 dark:border-neutral-700 border-dotted;
+    @apply w-full mt-0.5 border-neutral-300 border-dotted;
+  }
+
+  /* Dark rules use :global(.dark): Svelte 5 scopes the `:is(.dark *)` that a
+     `dark:` utility inside @apply produces, and it then matches nothing. */
+  :global(.dark) .row span {
+    @apply text-neutral-400;
+  }
+
+  :global(.dark) .row hr {
+    @apply border-neutral-700;
   }
 </style>

@@ -43,7 +43,13 @@
 
 <style lang="postcss">
   nav {
-    @apply flex items-center text-neutral-500 dark:text-neutral-400 justify-start space-x-6 text-lg;
+    @apply flex items-center text-neutral-500 justify-start space-x-6 text-lg;
+  }
+
+  /* Dark rules use :global(.dark): Svelte 5 scopes the `:is(.dark *)` that a
+     `dark:` utility inside @apply produces, and it then matches nothing. */
+  :global(.dark) nav {
+    @apply text-neutral-400;
   }
 
   @media (max-width: 420px) {
